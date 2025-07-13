@@ -1,0 +1,9 @@
+<form (submit)="submit(); $event.preventDefault()">
+  <label>اسم شما:</label>
+  <input type="text" [(ngModel)]="name" name="name" required/>
+  <button type="submit">ارسال</button>
+</form>
+
+@if (greeting) {
+  <p>{{ greeting }}</p>
+}
